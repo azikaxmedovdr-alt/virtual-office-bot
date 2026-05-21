@@ -5,8 +5,8 @@ from telegram import Update, Bot
 from telegram.ext import Application, MessageHandler, CommandHandler, filters, ContextTypes
 from telegram.constants import ChatAction
 from agents.registry import AGENTS
-from utils.history import ConversationHistory
-from utils.anthropic_client import ask_agent
+from utils import ConversationHistory, ask_agent
+
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
